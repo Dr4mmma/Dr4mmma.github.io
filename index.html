@@ -79,7 +79,7 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="https://wa.me/00962789972731">Contact</a></li>
+						<li><a href="https://wa.me/962789972731">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<h3>October 4th, 2024 Az Zarqa, Jordan</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<p>We invite you to celebrate our wedding</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -121,7 +121,7 @@
 					</div>
 					<div class="desc-groom">
 						<h3>Mohammad Abu-Mailish</h3>
-						<p>Computer Engineer that fell with the love of his life during university. And ever since, tried to do his best to win her heart</p>
+						<p>Computer Engineer</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -131,7 +131,7 @@
 					</div>
 					<div class="desc-bride">
 						<h3>Dema Al-Masafeh</h3>
-						<p>Physicist that met her future partner in university. And ever since, tried to do her best to keep her heart safe for her soulmate</p>
+						<p>Physicist</p>
 					</div>
 				</div>
 			</div>
@@ -202,7 +202,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>How We Loved Each Other</span>
 					<h2>Our Story</h2>
-					<p>Follow us along to check our full love story.</p>
+					<p>Follow us along to check our full engagement story.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -212,11 +212,11 @@
 							<div class="timeline-badge" style="background-image:url(images/us-6.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">February 18, 2018</span>
+									<h3 class="timeline-title">First Time Our Families Meet</h3>
+									<span class="date">June 4, 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>First time we seen each other at the university and smiled back to each other faces.</p>
+									<p>First time our families and us met to get to know each other.</p>
 								</div>
 							</div>
 						</li>
@@ -255,8 +255,8 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
-					<h2>Relationship Gallery</h2>
-					<p>Watch some of our memories written in amazing photos throughout our relationship period.</p>
+					<h2>Engagement Gallery</h2>
+					<p>Watch some of our memories written in amazing photos throughout our engagement period.</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -354,7 +354,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<a href="https://wa.me/00962789972731" class="btn btn-default btn-block" role="button">
+							<a href="https://wa.me/962789972731" class="btn btn-default btn-block" role="button">
 								I am Attending
 							</a>
 						</div>
@@ -414,23 +414,30 @@
 	<script src="js/main.js"></script>
 
 	<script>
-	// Set the countdown date to October 4, 2024
-	var countdownDate = new Date(2024, 9, 4); // Months are 0-indexed, so October is 9
+// Set the countdown date to October 4, 2024, at 9:00 PM
+var countdownDate = new Date(2024, 9, 4, 21, 0, 0); // 21:00:00 is 9:00 PM
 
-	// Default example
-	simplyCountdown('.simply-countdown-one', {
-		year: countdownDate.getFullYear(),
-		month: countdownDate.getMonth() + 1, // Adding 1 because months are 0-indexed
-		day: countdownDate.getDate()
-	});
+// Default example
+simplyCountdown('.simply-countdown-one', {
+    year: countdownDate.getFullYear(),
+    month: countdownDate.getMonth() + 1, // Adding 1 because months are 0-indexed
+    day: countdownDate.getDate(),
+    hours: countdownDate.getHours(),
+    minutes: countdownDate.getMinutes(),
+    seconds: countdownDate.getSeconds()
+});
 
-	// jQuery example
-	$('#simply-countdown-losange').simplyCountdown({
-		year: countdownDate.getFullYear(),
-		month: countdownDate.getMonth() + 1, // Adding 1 for correct month
-		day: countdownDate.getDate(),
-		enableUtc: false
-	});
+// jQuery example
+$('#simply-countdown-losange').simplyCountdown({
+    year: countdownDate.getFullYear(),
+    month: countdownDate.getMonth() + 1, // Adding 1 for correct month
+    day: countdownDate.getDate(),
+    hours: countdownDate.getHours(),
+    minutes: countdownDate.getMinutes(),
+    seconds: countdownDate.getSeconds(),
+    enableUtc: false
+});
+
 
 </script>
 
